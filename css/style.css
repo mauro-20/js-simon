@@ -1,0 +1,44 @@
+body{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn{
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #d16331;
+	color: #fff;
+}
+
+.number-input{
+  height: 60px;
+  width: 50px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #ccc;
+  box-shadow: 0 0 2px #474747;
+  border: 1px solid #474747;
+}
+.number-input.check-ok{
+  background-color: green;
+}
+.number-input.check-ko{
+  background-color: red;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.instructions{
+  display: none;
+}
+
+.visible {
+  display: block;
+}
