@@ -17,8 +17,8 @@ function numbersControl() {
       numMemorized.push(userNum);
     }
   }
-  console.log(`Hai indovinato ${numMemorized.length} numeri`)
-  console.log(`I numeri indovinati sono: ${numMemorized}`);
+  alert('Hai indovinato' + numMemorized.length + 'numeri');
+  alert('I numeri indovinati sono:' + numMemorized);
 
 }
 
