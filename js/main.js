@@ -15,7 +15,8 @@ function numbersControl() {
   //riabilto i campi input
   for (var i = 1; i <= 5; i++) {
           document.getElementById(`num${i}`).disabled = false;
-        }
+  }
+  //al click di Check
   document.getElementById('btn-check').addEventListener('click',
     function () {
       document.getElementById('instructions').classList.remove('visible');
@@ -29,12 +30,9 @@ function numbersControl() {
           document.getElementById(`num${i}`).classList.add('check-ko')
         }
       }
-      document.getElementById('guessed1').innerHTML = `Hai indovinato ${numMemorized.length} numeri`
-      // alert('Hai indovinato' + numMemorized.length + 'numeri');
-      // alert('I numeri indovinati sono:' + numMemorized);
+      document.getElementById('guessed').innerHTML = `Hai indovinato ${numMemorized.length} numeri`
     }
   )
-
 }
 
 // Inizializzo il programma
@@ -65,7 +63,5 @@ document.getElementById('btn-start').addEventListener('click',
       document.getElementById(`num${i}`).disabled = true;
     }
     setTimeout(numbersControl, 30000);
-
   }
-  
 )
